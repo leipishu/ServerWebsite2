@@ -1,0 +1,69 @@
+# 编译器生成的文件
+*.o
+*.class
+
+# IDE生成的文件
+.idea/
+.vscode/
+*.swp
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.temp
+
+# 包管理器生成的文件
+node_modules/
+__pycache__/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Python虚拟环境
+venv/
+env/
+
+# 包管理器配置文件
+package-lock.json
+yarn.lock
+
+# 数据库文件
+*.db
+*.sqlite
+
+# Web应用程序构建目录
+/build/
+/dist/
+/output/
+
+# 本地配置文件
+.env
+.config
+
+# 单元测试和测试生成的文件
+*.test.js
+*.spec.js
+test-results/
+
+# 文档生成和构建的文件
+/docs/
+/site/
+
+# 编辑器备份文件
+*.bak
+*.backup
+
+# 版本控制系统自身文件
+.git/
+
+# 其他个人文件
+*.DS_Store
+
+# 如果使用的是Node.js项目，还可以忽略以下文件
+*.js.map
+*.tsbuildinfo
