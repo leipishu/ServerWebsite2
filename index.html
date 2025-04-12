@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的世界服务器公约</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/quality.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <base href="/">
 </head>
 <body>
     <header id="header">
@@ -297,19 +300,21 @@
                         <h2>九、玩家标签系统</h2>
                         <ul>
                             <li><span class="bold-text">简介：</span>玩家可通过参与特定活动，提出模组建议并被采纳，建设性的发展建议并被采纳获得各式头衔。</li>
-                            <li><span class="bold-text">标签品质：</span>普通，稀有，超稀有，史诗，传奇</li>
+                            <li><span class="bold-text">标签品质：</span><span class="quality-normal">普通</span>，
+                                <span class="quality-rare">稀有</span>，<span class="quality-very-rare">超稀有</span>，<span class="quality-epic">史诗</span>，
+                                <span class="quality-legend">传奇</span>，<span class="quality-top">至高无上</span>。</li>
                             <li><span class="bold-text">头衔列表：</span>以下为各玩家头衔列表
                             <ul>
-                                <li>leipshu: [腐竹]</li>
-                                <li>StormMessager：[mod 贡献者++]</li>
+                                <li>leipshu: <span class="quality-top">[腐竹]</span></li>
+                                <li>StormMessager：<span class="quality-legend">[mod 贡献者++]</span></li>
                                 <li>Ryan_Fengrh：无</li>
                                 <li>ClassyMusic5443：无</li>
                             </ul></li>
                             <li><span class="bold-text">所有头衔：</span>以下为各所有头衔列表
                                 <ul>
-                                    <li>[腐竹] 品质：至高无上；玩家：leipshu；该头衔展示了玩家的最高权力</li>
-                                    <li>[mod 贡献者++] 品质：传奇；玩家：StormMessager；该头衔展示了玩家对于游戏初始时至高的mod贡献</li>
-                                    <li>[mod 贡献者] 品质：超稀有；玩家：无；该头衔展示了玩家对于游戏进行中的小规模mod贡献</li>
+                                    <li><span class="quality-top">[腐竹]</span> 品质：<span class="quality-top">至高无上</span>；玩家：leipshu；该头衔展示了玩家的最高权力</li>
+                                    <li><span class="quality-legend">[mod 贡献者++]</span> 品质：<span class="quality-legend">传奇</span>；玩家：StormMessager；该头衔展示了玩家对于游戏初始时至高的mod贡献</li>
+                                    <li><span class="quality-very-rare">[mod 贡献者]</span>  品质：<span class="quality-very-rare">超稀有</span>；玩家：无；该头衔展示了玩家对于游戏进行中的小规模mod贡献</li>
                                 </ul></li>
                         </ul>
                     </div>
@@ -326,7 +331,8 @@
                     <div class="card">
                         <h2>十一、公告</h2>
                         <p>服务器的最新消息会在公告中显示，欢迎关注！</p>
-                        <a href="pages/notices.html" target="_blank" class="button">查看公告</a>
+                        <button class="link-button" onclick="jumpToNoticeLink()">查看公告</button>
+
                     </div>
                 </section>
             </main>
@@ -339,5 +345,6 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script src="js/links.js"></script>
 </body>
 </html>

@@ -1,0 +1,44 @@
+.quality-normal{
+    font-weight: normal;
+}
+
+.quality-rare{
+    font-weight: normal;
+    color: #55FFFF;
+}
+
+.quality-very-rare{
+    font-weight: normal;
+    color: #5555FF;
+}
+
+.quality-epic{
+    font-weight: bold;
+    color: #ffff00;
+}
+
+.quality-legend{
+    font-weight: bold;
+    color: #FFAA00;
+}
+
+.quality-top {
+    font-weight: bold;
+    background: linear-gradient(
+            to right,
+            #ff0000,  /* 红色 */
+            #ff7f00,  /* 橙色 */
+            #ffff00,  /* 黄色 */
+            #00ff00,  /* 绿色 */
+            #5555ff,  /* 蓝色 */
+            #9400d3   /* 紫色 */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.diamond{
+    font-weight: bold;
+    color: aqua;
+}
