@@ -1,52 +1,48 @@
-/* From Uiverse.io by Ali-Tahmazi99 */
-/* From uiverse.io by @Ali-Tahmazi99 */
 .link-button {
-    display: inline-block;
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    border: 1px solid #03045e;
     position: relative;
-    overflow: hidden;
-    transition: all 0.5s ease-in;
-    z-index: 1;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
 }
 
-.link-button::before,
+.link-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.link-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .link-button::after {
-    content: '';
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
     position: absolute;
     top: 0;
-    width: 0;
-    height: 100%;
-    transform: skew(15deg);
-    transition: all 0.5s;
-    overflow: hidden;
+    left: 0;
     z-index: -1;
-}
-
-.link-button::before {
-    left: -10px;
-    background: #240046;
+    transition: all 0.4s;
 }
 
 .link-button::after {
-    right: -10px;
-    background: #5a189a;
+    background-color: #fff;
 }
 
-.link-button:hover::before,
 .link-button:hover::after {
-    width: 58%;
-}
-
-.link-button:hover span {
-    color: #e0aaff;
-    transition: 0.3s;
-}
-
-.link-button span {
-    color: #03045e;
-    font-size: 18px;
-    transition: all 0.3s ease-in;
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
