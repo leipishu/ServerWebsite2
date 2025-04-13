@@ -1,48 +1,31 @@
 .link-button {
-    position: relative;
-    font-size: 17px;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1em 2.5em;
-    display: inline-block;
     cursor: pointer;
-    border-radius: 6em;
+    font-weight: 700;
     transition: all 0.2s;
-    border: none;
-    font-family: inherit;
-    font-weight: 500;
-    color: black;
-    background-color: white;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #007BFF;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: white;
 }
 
 .link-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: #026ce0;
+}
+
+.link-button > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.link-button:hover svg {
+    transform: translateX(5px);
 }
 
 .link-button:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.link-button::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
-}
-
-.link-button::after {
-    background-color: #fff;
-}
-
-.link-button:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
+    transform: scale(0.95);
 }
