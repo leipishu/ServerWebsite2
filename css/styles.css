@@ -9,7 +9,7 @@ body {
 
 
 header {
-    background-image: linear-gradient(120deg, rgba(132, 250, 176, 0.9) 0%, rgba(143, 211, 244, 0.9) 100%); /* 使用rgba格式的渐变色 */
+    background-color: #007BFF; /* 使用rgba格式的渐变色 */
     color: white;
     padding: 10px 20px;
     /* 使用flex布局，垂直排列 */
@@ -123,7 +123,7 @@ header .logo img {
     left: 0; /* 控制渐变色块的位置 */
     height: 100%;
     width: 0;
-    background-image: linear-gradient(120deg, rgba(132, 250, 176) 0%, rgba(143, 211, 244) 100%);
+    background-color: #007BFF;
     transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
@@ -259,7 +259,7 @@ section.fade-in {
 }
 
 footer {
-    background-image: linear-gradient(120deg, rgba(132, 250, 176, 0.9) 0%, rgba(143, 211, 244, 0.9) 100%);
+    background-color: #007BFF;
     color: white;
     font-weight: bold;
     text-align: center;

@@ -1,44 +1,110 @@
-.quality-normal{
+.quality-normal {
     font-weight: normal;
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
 }
 
-.quality-rare{
+.quality-rare {
     font-weight: normal;
-    color: #55FFFF;
+    background-color: #55FFFF;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
 }
 
-.quality-very-rare{
-    font-weight: normal;
-    color: #5555FF;
-}
-
-.quality-epic{
+.quality-very-rare {
     font-weight: bold;
-    color: #ffff00;
+    background-color: #FFA07A;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
 }
 
-.quality-legend{
+.quality-epic {
     font-weight: bold;
-    color: #FFAA00;
+    background-color: #FFD700;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+
+.quality-legend {
+    font-weight: bold;
+    background-color: #8A2BE2;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
 }
 
 .quality-top {
     font-weight: bold;
     background: linear-gradient(
-            to right,
-            #ff0000,  /* 红色 */
-            #ff7f00,  /* 橙色 */
-            #ffff00,  /* 黄色 */
-            #00ff00,  /* 绿色 */
-            #5555ff,  /* 蓝色 */
-            #9400d3   /* 紫色 */
+        to right,
+        #ff0000,  /* 红色 */
+        #ff7f00,  /* 橙色 */
+        #ffff00,  /* 黄色 */
+        #00ff00,  /* 绿色 */
+        #5555ff,  /* 蓝色 */
+        #9400d3   /* 紫色 */
     );
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
+    color: white; /* 文本颜色为白色 */
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
 }
 
-.diamond{
+.diamond {
     font-weight: bold;
     color: aqua;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start; /* 确保内容从左侧开始对齐 */
+    position: relative; /* 为了定位图标 */
+}
+
+.diamond::before {
+    content: '';
+    background-image: url('/img/items/diamond.webp'); /* 添加图标 */
+    background-size: 20px 20px; /* 设置图标大小 */
+    background-repeat: no-repeat;
+    background-position: center left; /* 图标位置 */
+    width: 20px; /* 图标的宽度 */
+    height: 20px; /* 图标的高度 */
+    margin-right: 4px; /* 图标与文本之间的间距 */
 }
