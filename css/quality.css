@@ -8,7 +8,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 8px;
+    margin: 5px;
 }
 
 .quality-rare {
@@ -21,7 +21,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 8px;
+    margin: 5px;
 }
 
 .quality-very-rare {
@@ -34,7 +34,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 8px;
+    margin: 5px;
 }
 
 .quality-epic {
@@ -47,7 +47,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 8px;
+    margin: 5px;
 }
 
 .quality-legend {
@@ -60,7 +60,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 8px;
+    margin: 5px;
 }
 
 .quality-top {
@@ -81,7 +81,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 8px;
+    margin: 5px;
 }
 
 .diamond {
