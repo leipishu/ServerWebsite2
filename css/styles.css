@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    width:100%;
+    overflow-x:hidden;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,6 +30,7 @@ header {
     position: relative; /* 设置相对定位 */
     width: 100%; /* 确保header宽度为100% */
     margin-bottom: 10px;
+    z-index: 0; /* 确保header在waves之上 */
 }
 
 header .logo {
@@ -295,9 +306,6 @@ strong {
     padding: 20px;
     margin: 0px;
     margin-top:5px;
-    margin-bottom: 0px;
-    margin-left: 0px; /* 添加左侧间隔 */
-    margin-right: 0px; /* 添加右侧间隔 */
     transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
@@ -313,16 +321,17 @@ strong {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* 可选：增加阴影以增强浮起效果 */
 }
 
-/* 波浪效果 */
+
 .waves {
     position: relative;
-    width: 105%;
+    width: 100vw; /* 设置为视口宽度 */
     height: 100px; /* 设置波浪的高度 */
-    margin-top: 10px; /* 添加顶部边距 */
-    margin-bottom: -7px; /* 修复Safari的间隙 */
-    margin-left: -10px;
+    bottom: -10px;
+    left: 0;
+    overflow: hidden; /* 防止内容溢出 */
     min-height: 100px;
     max-height: 150px;
+    margin: 0; /* 确保没有外部边距影响宽度 */
 }
 
 .parallax > use {

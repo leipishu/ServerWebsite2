@@ -1,4 +1,13 @@
-/* styles-dark.css */
+* {
+    box-sizing: border-box;
+}
+
+html{
+    width:100%;
+    overflow-x:hidden;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,40 +17,6 @@ body {
     min-height: 100vh;
     background-color: #121212; /* 黑色背景 */
     color: #f0f0f0; /* 浅色文字 */
-}
-
-/* styles-dark.css */
-#navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #007BFF; /* 深色背景 */
-    color: #f0f0f0;
-    position: sticky;
-    top: 0;
-    z-index: 1001;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-}
-
-
-#navbar .logo img {
-    height: 24px;
-}
-
-#navbar .right-items {
-    display: flex;
-    align-items: center;
-}
-
-#navbar .theme-switch {
-    margin-left: auto; /* 将主题开关推到navbar的右边 */
-}
-
-#navbar.sticky {
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(30px);
 }
 
 header {
@@ -353,13 +328,14 @@ strong {
 /* 波浪效果 */
 .waves {
     position: relative;
-    width: 105%;
+    width: 100vw; /* 设置为视口宽度 */
     height: 100px; /* 设置波浪的高度 */
-    margin-top: 10px; /* 添加顶部边距 */
-    margin-bottom: -7px; /* 修复Safari的间隙 */
-    margin-left: -10px;
+    bottom: -10px;
+    left: 0;
+    overflow: hidden; /* 防止内容溢出 */
     min-height: 100px;
     max-height: 150px;
+    margin: 0; /* 确保没有外部边距影响宽度 */
     --wave-color-1: rgba(18, 18, 18, 0.7); /* 深灰色 */
     --wave-color-2: rgba(18, 18, 18, 0.5); /* 浅灰色 */
     --wave-color-3: rgba(18, 18, 18, 0.3); /* 更浅灰色 */

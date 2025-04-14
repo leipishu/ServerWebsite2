@@ -29,3 +29,42 @@
 .link-button:active {
     transform: scale(0.95);
 }
+/* From Uiverse.io by MarcLazz */
+.github-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.github-button {
+    margin-left: 0.75rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #2d2e32;
+    border: 2px solid #2d2e32;
+    transition: all 0.45s;
+}
+
+.github-button:hover {
+    transform: rotate(360deg);
+    transform-origin: center center;
+    background-color: #ffff;
+    color: #2d2e32;
+}
+
+.github-button:hover .btn-svg {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg)
+    brightness(103%) contrast(103%);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
