@@ -14,3 +14,7 @@ function goToHomePage() {
 function goToNotices(){
     window.location.href='notices.html';
 }
+
+function goToGitHub(){
+    window.location.href='https://github.com/leipishu/ServerWebsite2';
+}
