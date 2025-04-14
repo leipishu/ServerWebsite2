@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // 标志，用于跟踪侧边栏是否被用户手动折叠
     let userCollapsed = false;
 
+    // 标志，用于跟踪页面是否正在加载
+    let isLoading = false;
+
     // 移除 sticky 样式
     navbar.style.position = 'relative';
     navbar.style.top = 'auto';
@@ -93,8 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // 隐藏加载动画
         setTimeout(() => {
             hideLoading();
-            isLoading = false; // 重置加载标志
-
             // 触发动画效果
             setTimeout(() => {
                 handleResponsive(); // 初始化时检查窗口宽度
@@ -202,19 +203,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href]').forEach(link => {
         link.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
-            if (href && href !== '#' && !href.startsWith('javascript:') && !isLoading) {
+            if (href && href !== '#' && !href.startsWith('javascript:')) {
                 e.preventDefault();
-                isLoading = true;
-                showLoading(); // 显示加载动画
-
-                // 模拟页面加载延迟
-                setTimeout(() => {
-                    window.location.href = href;
-                    isLoading = false;
-                }, 0); // 1000ms后跳转
+                // 直接跳转页面，不需要加载动画
+                window.location.href = href;
             }
         });
     });
+
 
     // 显示加载动画
     function showLoading() {
