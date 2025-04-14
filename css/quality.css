@@ -66,13 +66,13 @@
 .quality-top {
     font-weight: bold;
     background: linear-gradient(
-        to right,
-        #ff0000,  /* 红色 */
-        #ff7f00,  /* 橙色 */
-        #ffff00,  /* 黄色 */
-        #00ff00,  /* 绿色 */
-        #5555ff,  /* 蓝色 */
-        #9400d3   /* 紫色 */
+            to right,
+            #ff5555,  /* 降低饱和度的红色 */
+            #ffaa55,  /* 降低饱和度的橙色 */
+            #fffa55,  /* 降低饱和度的黄色 */
+            #aaff55,  /* 降低饱和度的绿色 */
+            #8888ff,  /* 降低饱和度的蓝色 */
+            #8844cc   /* 降低饱和度的紫色 */
     );
     color: black; /* 文本颜色为白色 */
     text-align: center;

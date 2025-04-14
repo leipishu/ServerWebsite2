@@ -1,0 +1,59 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+}
+
+#navbar .logo img {
+    height: 24px;
+}
+
+#navbar .right-items {
+    display: flex;
+    align-items: center;
+}
+
+#navbar .theme-switch {
+    margin-left: auto; /* 将主题开关推到navbar的右边 */
+}
+
+a {
+    text-decoration: none;
+}
+.menu__link {
+    color: #fff;
+    line-height: 2;
+    position: relative;
+}
+
+.menu__link::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -.25rem;
+    left: 50%;
+    transition: width .4s, left .4s;
+}
+
+.menu__link:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+#navbar .icon {
+    margin-top: -6px;
+    height: 24px; /* 设置图标高度 */
+    margin-right: 3px; /* 在图标和文本之间添加右边距 */
+    vertical-align: middle; /* 垂直对齐文本 */
+}
