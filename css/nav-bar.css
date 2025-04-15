@@ -20,6 +20,11 @@
     display: flex;
     align-items: center;
 }
+#navbar .left-items {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
 
 #navbar .theme-switch {
     margin-left: auto; /* 将主题开关推到navbar的右边 */

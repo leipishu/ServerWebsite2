@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的世界服务器公约</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/quality.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/switch.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<nav id="navbar">
+    <div class="left-items">
+        <a href="index.html" class="menu__link">
+            <img src="img/SVG/Home.svg" alt="首页图标" class="icon"> 主页
+        </a>
+        <a href="notices.html" class="menu__link">
+            <img src="img/SVG/Notices.svg" alt="公告图标" class="icon"> 公告
+        </a>
+    </div>
+    <div class="right-items">
+        <label class="ui-switch">
+            <input type="checkbox" class="theme-switch__checkbox">
+            <div class="slider">
+                <div class="circle"></div>
+            </div>
+        </label>
+        <div class="github-button-container">
+            <button class="github-button flex-center" onclick=goToGitHub()>
+                <svg
+                        stroke="#fff"
+                        fill="#fff"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        version="1.1"
+                        class="btn-svg"
+                        width="22px"
+                        viewBox="0 0 20 20"
+                >
+                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                    <g
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                            id="SVGRepo_tracerCarrier"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <title>github [#fff142]</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g
+                                fill-rule="evenodd"
+                                fill="none"
+                                stroke-width="1"
+                                stroke="none"
+                                id="Page-1"
+                        >
+                            <g
+                                    fill="#fff"
+                                    transform="translate(-140.000000, -7559.000000)"
+                                    id="Dribbble-Light-Preview"
+                            >
+                                <g transform="translate(56.000000, 160.000000)" id="icons">
+                                    <path
+                                            id="github-[#fff142]"
+                                            d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                    ></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<header id="header">
+    <div class="logo">
+        <img src="img/logo.png" alt="服务器图标">
+    </div>
+    <h1>Ad Astra 服务器公约</h1>
+    <!-- 添加波浪效果 -->
+    <div class="waves">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave"
+                      d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+    </div>
+</header>
+
+
+<div class="content-wrapper">
+    <div class="container">
+        <nav id="sidebar">
+            <button id="toggle-sidebar">
+                <img src="img/SVG/side_toggle.svg" alt="Toggle" class="toggle-icon">
+            </button>
+            <ul class="main-menu">
+                <li>
+                    <a href="#preface" class="active">
+                        <span class="number">1</span>
+                        <span class="text">前言</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#basic-rules">
+                        <span class="number">2</span>
+                        <span class="text">基本准则</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#specific-rules">
+                        <span class="number">3</span>
+                        <span class="text">具体规则与惩罚措施</span>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="#rule-1">
+                                <span class="number">3.1</span>
+                                <span class="text">言语辱骂与人身攻击</span>
+                            </a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#rule-2">
+                                <span class="number">3.2</span>
+                                <span class="text">恶意破坏他人基地</span>
+                            </a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#rule-3">
+                                <span class="number">3.3</span>
+                                <span class="text">外挂与作弊行为</span>
+                            </a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#rule-4">
+                                <span class="number">3.4</span>
+                                <span class="text">欺诈与诈骗行为</span>
+                            </a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#rule-5">
+                                <span class="number">3.5</span>
+                                <span class="text">阵营冲突</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#rent-and-trade">
+                        <span class="number">4</span>
+                        <span class="text">物资租借与交易规则</span>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="#rent">
+                                <span class="number">4.1</span>
+                                <span class="text">物资租借</span>
+                            </a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#trade">
+                                <span class="number">4.2</span>
+                                <span class="text">物资交易</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#reporting">
+                        <span class="number">5</span>
+                        <span class="text">举报机制</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#punishment">
+                        <span class="number">6</span>
+                        <span class="text">惩罚机制</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#appeal">
+                        <span class="number">7</span>
+                        <span class="text">申诉机制</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#other">
+                        <span class="number">8</span>
+                        <span class="text">其他规定</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tags">
+                        <span class="number">9</span>
+                        <span class="text">玩家标签系统</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#conclusion">
+                        <span class="number">10</span>
+                        <span class="text">结语</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#notices">
+                        <span class="number">11</span>
+                        <span class="text">公告</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="preface" class="fade-in">
+                <div class="card">
+                    <h2>一、前言</h2>
+                    <p>欢迎加入我们的《我的世界》服务器！本服务器以“Ad Astra”模组为核心，同时添加了“神话金属”和“种族”模组，旨在为玩家提供一个充满探索、创造与合作的游戏环境。</p>
+                    <p>为了维护服务器的秩序与和谐，保障所有玩家的权益，特制定本公约。请所有玩家在加入服务器前仔细阅读并严格遵守本公约。</p>
+                </div>
+            </section>
+
+            <section id="basic-rules" class="fade-in">
+                <div class="card">
+                    <h2>二、基本准则</h2>
+                    <ul>
+                        <li><span class="bold-text">尊重他人</span>：服务器内所有玩家均为平等的个体，应相互尊重，禁止任何形式的言语辱骂、人身攻击或性别歧视等行为。</li>
+                        <li><span class="bold-text">遵守规则</span>：所有玩家必须遵守本公约的各项条款，以及服务器内其他相关规则。</li>
+                        <li><span class="bold-text">友好合作</span>：服务器以合作为主旨，鼓励玩家之间相互帮助、共同探索。禁止恶意破坏其他玩家的建筑、基地或物品，禁止无端挑衅或攻击其他玩家。</li>
+                        <li><span class="bold-text">禁止外挂</span>：服务器内严禁使用任何形式的外挂、作弊工具或脚本。</li>
+                        <li><span class="bold-text">合理举报</span>：玩家有权对违规行为进行举报，但需确保举报内容真实可靠，不得恶意举报或诬陷他人。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="specific-rules" class="fade-in">
+                <div class="card">
+                    <h2>三、具体规则与惩罚措施</h2>
+                    <section id="rule-1" class="fade-in">
+                        <h3>3.1 言语辱骂与人身攻击</h3>
+                        <ul>
+                            <li><span class="bold-text">轻微违规</span>：使用不礼貌的言语或进行轻微的人身攻击，给予警告一次。</li>
+                            <li><span class="bold-text">中等违规</span>：多次使用不礼貌的言语或进行中度人身攻击，给予禁言24小时，并罚款<span class="diamond">50钻石</span>。</li>
+                            <li><span class="bold-text">严重违规</span>：进行严重的言语辱骂或人身攻击，导致其他玩家感到不适或退出游戏，给予封号7天，并罚款<span class="diamond">100钻石</span>。</li>
+                        </ul>
+                    </section>
+
+                    <section id="rule-2" class="fade-in">
+                        <h3>3.2 恶意破坏他人基地</h3>
+                        <ul>
+                            <li><span class="bold-text">轻微违规</span>：误操作导致轻微破坏他人基地或物品，给予警告一次，并要求恢复原状。</li>
+                            <li><span class="bold-text">中等违规</span>：故意破坏他人基地或物品，但未造成严重后果，给予禁言48小时，并罚款<span class="diamond">100钻石</span>。</li>
+                            <li><span class="bold-text">严重违规</span>：恶意破坏他人基地或物品，造成严重后果或损失，给予封号10天，并罚款<span class="diamond">200钻石</span>，同时需赔偿受害者损失。</li>
+                        </ul>
+                    </section>
+
+                    <section id="rule-3" class="fade-in">
+                        <h3>3.3 外挂与作弊行为</h3>
+                        <ul>
+                            <li><span class="bold-text">使用外挂</span>：一经发现，立即给予永久封号，并没收所有非法获取的物品和资源。</li>
+                            <li><span class="bold-text">利用游戏漏洞</span>：利用游戏漏洞获取不正当利益，给予封号7天，并罚款<span class="diamond">150钻石</span>，同时没收非法获取的物品和资源。</li>
+                        </ul>
+                    </section>
+
+                    <section id="rule-4" class="fade-in">
+                        <h3>3.4 欺诈与诈骗行为</h3>
+                        <ul>
+                            <li><span class="bold-text">轻微违规</span>：在交易中存在欺诈行为，但未造成严重后果，给予禁言24小时，并罚款<span class="diamond">50钻石</span>。</li>
+                            <li><span class="bold-text">中等违规</span>：在交易中存在欺诈行为，导致其他玩家损失较小，给予封号7天，并罚款<span class="diamond">100钻石</span>，同时需赔偿受害者损失。</li>
+                            <li><span class="bold-text">严重违规</span>：在交易中存在严重欺诈行为，导致其他玩家损失较大，给予封号10天，并罚款<span class="diamond">200钻石</span>，同时需赔偿受害者损失。</li>
+                        </ul>
+                    </section>
+
+                    <section id="rule-5" class="fade-in">
+                        <h3>3.5 阵营冲突</h3>
+                        <ul>
+                            <li><span class="bold-text">轻微违规</span>：因阵营问题引发轻微冲突，给予警告一次。</li>
+                            <li><span class="bold-text">中等违规</span>：因阵营问题引发中等冲突，给予禁言24小时，并罚款<span class="diamond">50钻石</span>。</li>
+                            <li><span class="bold-text">严重违规</span>：因阵营问题引发严重冲突，导致其他玩家退出游戏或服务器秩序混乱，给予封号10天，并罚款<span class="diamond">100钻石</span>。</li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+
+            <section id="rent-and-trade" class="fade-in">
+                <div class="card">
+                    <h2>四、物资租借与交易规则</h2>
+                    <section id="rent" class="fade-in">
+                        <h3>4.1 物资租借</h3>
+                        <ul>
+                            <li><span class="bold-text">私下租借</span>：玩家之间可以私下进行物资租借，但需在租借前明确约定租借期限、使用范围和归还时间。租借期间，租借方需妥善保管物资，如有损坏或丢失，需按约定赔偿。</li>
+                            <li><span class="bold-text">官方记录在案的租借</span>：对于重要物资或长期租借，建议通过服务器官方渠道进行记录。租借方需向服主提交租借申请，说明租借用途、期限和归还方式。服主审核通过后，将记录在案，并在租借结束后进行检查。如有违反租借约定，将根据情节轻重给予警告、禁言或罚款处罚。</li>
+                        </ul>
+                    </section>
+
+                    <section id="trade" class="fade-in">
+                        <h3>4.2 物资交易</h3>
+                        <ul>
+                            <li><span class="bold-text">私下交易</span>：玩家之间可以进行私下交易，但需遵循公平、自愿的原则。交易过程中，双方应自行承担风险，如因交易产生的纠纷，服主将协助调解，但不承担赔偿责任。</li>
+                            <li><span class="bold-text">官方记录在案的交易</span>：对于大额交易或重要物品交易，建议通过服务器官方渠道进行记录。交易双方需向服主提交交易申请，说明交易物品、价格和交易方式。服主审核通过后，将记录在案，并在交易完成后进行确认。如有违反交易约定，将根据情节轻重给予警告、禁言或罚款处罚。</li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+
+            <section id="reporting" class="fade-in">
+                <div class="card">
+                    <h2>五、举报机制</h2>
+                    <h3>5.1 举报规则</h3>
+                    <ul>
+                        <li><span class="bold-text">举报方式</span>：玩家可以通过游戏内私聊、邮件或其他联系方式向服主提交举报信息。举报信息需包括被举报玩家的用户名、违规行为的具体描述、相关证据（如截图、录像等）。</li>
+                        <li><span class="bold-text">举报处理</span>：服主将在收到举报后的48小时内进行调查核实。如果举报内容属实，将对被举报玩家进行相应处罚，并对举报玩家给予奖励（如钻石、荣誉称号等）。如果举报内容不属实，将对举报玩家进行警告，恶意举报或诬陷他人将给予禁言24小时或封号3天的处罚。</li>
+                        <li><span class="bold-text">举报奖励</span>：对于成功举报违规行为的玩家，将给予<span class="diamond">50钻石</span>的奖励。举报奖励将在举报内容核实后3天内发放。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="punishment" class="fade-in">
+                <div class="card">
+                    <h2>六、惩罚机制</h2>
+                    <ul>
+                        <li><span class="bold-text">警告</span>：对于首次违反公约的行为，给予警告一次。警告包括口头警告和书面警告两种形式，具体形式由服主根据情况决定。</li>
+                        <li><span class="bold-text">禁言</span>：对于违反公约且情节较重的行为，给予禁言处罚。禁言时间为1小时至48小时，具体时间由服主根据情况决定。禁言期间，玩家无法在服务器内发言，但可以正常进行游戏。</li>
+                        <li><span class="bold-text">封号</span>：对于严重违反公约的行为，给予封号处罚。封号时间为1天至10天，具体时间由服主根据情况决定。封号期间，玩家无法登录服务器。</li>
+                        <li><span class="bold-text">物品没收</span>：对于通过非法手段获取的物品，服主将予以没收。没收的物品将归服务器所有，用于公共建设或其他合法用途。</li>
+                        <li><span class="bold-text">罚款</span>：对于违反公约的行为，根据情节轻重给予罚款处罚。罚款金额为<span class="diamond">50至200钻石</span>，具体金额由服主根据情况决定。罚款将用于服务器的公共建设或其他合法用途。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="appeal" class="fade-in">
+                <div class="card">
+                    <h2>七、申诉机制</h2>
+                    <h3>7.1 申诉规则</h3>
+                    <ul>
+                        <li><span class="bold-text">申诉条件</span>：玩家如对服主的处罚决定有异议，可在处罚决定作出后的24小时内向服主提出申诉。申诉需提供充分的证据和合理的理由，否则不予受理。</li>
+                        <li><span class="bold-text">申诉流程</span>：玩家可通过游戏内私聊、邮件或其他联系方式向服主提出申诉。服主将在收到申诉后的48小时内进行调查核实，并作出最终处理决定。最终处理决定为最终裁决，玩家应予以接受。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="other" class="fade-in">
+                <div class="card">
+                    <h2>八、其他规定</h2>
+                    <ul>
+                        <li><span class="bold-text">服主权限</span>：服主是服务器的最高管理者，拥有对服务器的最终解释权和决策权。服主有权根据服务器的实际情况对本公约进行修改和完善，修改后的公约将及时通知所有玩家。</li>
+                        <li><span class="bold-text">玩家责任</span>：玩家应自觉遵守本公约，如有违反，将自行承担相应的后果。玩家应积极配合服主的工作，共同维护服务器的良好秩序。</li>
+                        <li><span class="bold-text">公约生效</span>：本公约自发布之日起生效，适用于服务器内所有玩家。玩家在加入服务器时，即视为已阅读并同意遵守本公约。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="tags" class="fade-in">
+                <div class="card">
+                    <h2>九、玩家标签系统</h2>
+                    <ul>
+                        <li><span class="bold-text">简介：</span>玩家可通过参与特定活动，提出模组建议并被采纳，建设性的发展建议并被采纳获得各式头衔。</li>
+                        <li><span class="bold-text">标签品质：</span><span class="quality-normal">普通</span>
+                            <span class="quality-rare">稀有</span><span class="quality-very-rare">超稀有</span><span class="quality-epic">史诗</span>
+                            <span class="quality-legend">传奇</span><span class="quality-top">至高无上</span>。</li>
+                        <li><span class="bold-text">头衔列表：</span>以下为各玩家头衔列表
+                        <ul>
+                            <li>leipshu: <span class="quality-top">[腐竹]</span></li>
+                            <li>StormMessager：<span class="quality-legend">[mod 贡献者++]</span><span class="quality-epic">[叵矿工]</span></li>
+                            <li>Ryan_Fengrh：无</li>
+                            <li>ClassyMusic5443：无</li>
+                        </ul></li>
+                        <li><span class="bold-text">所有头衔：</span>以下为各所有头衔列表
+                            <ul>
+                                <li><span class="quality-top">[腐竹]</span> 品质：<span class="quality-top">至高无上</span>；玩家：leipshu；该头衔展示了玩家的最高权力</li>
+                                <li><span class="quality-legend">[mod 贡献者++]</span> 品质：<span class="quality-legend">传奇</span>；玩家：StormMessager；该头衔展示了玩家对于游戏初始时至高的mod贡献</li>
+                                <li><span class="quality-epic">[叵矿工]</span> 品质：<span class="quality-epic">史诗</span>；玩家：StormMessager；该头衔展示了玩家成为服务器第一个获得叵得素(infinity中称之为难得素)的玩家</li>
+                                <li><span class="quality-very-rare">[mod 贡献者]</span>  品质：<span class="quality-very-rare">超稀有</span>；玩家：无；该头衔展示了玩家对于游戏进行中的小规模mod贡献</li>
+                            </ul></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="conclusion" class="fade-in">
+                <div class="card">
+                    <h2>十、结语</h2>
+                    <p>本服务器致力于为玩家提供一个安全、和谐、有趣的游戏环境。希望所有玩家都能遵守本公约，共同维护服务器的秩序与稳定。如有任何问题或建议，欢迎随时向服主反馈，我们将努力为大家提供更好的服务。</p>
+                </div>
+            </section>
+
+            <section id="notices" class="fade-in">
+                <div class="card">
+                    <h2>十一、公告</h2>
+                    <button class="link-button" onclick="goToNotices()">
+                        <span>前往公告</span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 74 74"
+                            height="34"
+                            width="34"
+                        >
+                            <circle stroke-width="3" stroke="white" r="35.5" cy="37" cx="37"></circle>
+                            <path
+                                fill="white"
+                                d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>服主：leipishu | 日期：2025.4.6</p>
+        <p>版权所有 © 2025 leipishu | play.leipishu.top</p>
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/links.js"></script>
+</body>
+</html>

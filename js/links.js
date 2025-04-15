@@ -3,7 +3,7 @@ function getHomePageUrl() {
     if (window.location.hostname === 'mc.leipishu.top') {
         return '/';
     } else {
-        return 'index.html';
+        return 'convention.html';
     }
 }
 
@@ -13,6 +13,10 @@ function goToHomePage() {
 
 function goToNotices(){
     window.location.href='notices.html';
+}
+
+function goToConvention(){
+    window.location.href='convention.html';
 }
 
 function goToGitHub(){
